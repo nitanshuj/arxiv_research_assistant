@@ -1,0 +1,22 @@
+numpy
+pandas
+crewai
+crewai-tools
+arxiv
+transformers
+torch
+python-dotenv
+pydantic
+openai
+langchain
+langchain-community
+chromadb
+# mistral_inference
+huggingface_hub
+sentence-transformers
+streamlit-feedback
+streamlit
+requests
+ollama
+lmstudio
+ctransformers

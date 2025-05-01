@@ -136,6 +136,10 @@ ENV/
 env.bak/
 venv.bak/
 
+# Ignoring the Notebooks
+Notebooks/
+
+
 # Spyder project settings
 .spyderproject
 .spyproject
