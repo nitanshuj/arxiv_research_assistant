@@ -137,7 +137,7 @@ env.bak/
 venv.bak/
 
 # Ignoring the Notebooks
-Notebooks/
+research_notebooks/
 
 
 # Spyder project settings

@@ -1,22 +1,31 @@
 numpy
 pandas
-crewai
-crewai-tools
-arxiv
-transformers
 torch
-python-dotenv
-pydantic
-openai
-langchain
-langchain-community
-chromadb
-# mistral_inference
-huggingface_hub
+arxiv
+crewai>=0.12.1
+crewai-tools
+google-generativeai
+docx
+requests
+transformers
+ctransformers
 sentence-transformers
 streamlit-feedback
 streamlit
-requests
-ollama
 lmstudio
-ctransformers
+reportlab
+python-dotenv
+pydantic>=2.0.0
+openai
+langchain
+langchain-community
+langchain_google_genai
+# fpdf
+# PyPDF2
+# pdfkit
+# chromadb
+# mistral_inference
+# huggingface_hub
+
+# ollama
+

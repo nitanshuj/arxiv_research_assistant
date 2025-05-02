@@ -1,0 +1,3 @@
+Documents generated successfully:
+- Text file: static/reports\Report_top_papers_summary.txt
+- Markdown file: static/reports\Report_top_papers_summary.md
