@@ -1,6 +1,7 @@
 # Multi-agent-framework-for-ArXiv-paper-research
 
 ## Overview
+------------------------
 This framework is a multi-agent system designed to automate the process of discovering, analyzing, and ranking AI research papers from ArXiv. Leveraging the power of AI agents and large language models (LLMs) - both local LLMs and Google's gemini, this application (crew) automates the process of discovering, analyzing, and presenting cutting-edge research papers from arXiv.
 
 The system consists of three specialized agents working together to provide a comprehensive research experience:
@@ -10,8 +11,13 @@ The system consists of three specialized agents working together to provide a co
 3. **Text Generation Agent**: Creates well-formatted text and markdown summaries for easy sharing and reference
 
 
-## Key Features
+## Architecture Diagram
+------------------------
+![Architecture Diagram](images/architecture-design-new.png)
 
+
+## Key Features
+------------------------
 - **Automated Research Discovery**: Automatically fetches the latest papers from arXiv
 - **AI-Powered Analysis**: Evaluates papers based on innovation, methodology, and potential impact
 - **Multi-Format Reports**: Generates reports in HTML, Markdown, and plain text formats
@@ -21,14 +27,14 @@ The system consists of three specialized agents working together to provide a co
 - **Multi-LLM Architecture**: Utilizes different LLMs for specialized tasks.
 
 ## How It Works
-
+------------------------
 1. **Paper Retrieval**: The system uses the `FetchArxivPapersTool` to fetch papers from ArXiv based on the selected date and categories.
 2. **Analysis and Ranking**: A `Senior AI Researcher` agent evaluates the papers using a custom LLM (Language Model) and ranks them based on their significance.
 3. **Report Generation**: A `Frontend Engineer` agent compiles the results into an interactive HTML report.
 4. **Feedback Collection**: Users can provide feedback on the results, which is saved for future improvements.
 
-
 ## Installation
+------------------------
 1. Clone the repository:
    ```bash
    git clone https://github.com/nitanshuj/arxiv_research_assistant.git
@@ -55,7 +61,7 @@ The system consists of three specialized agents working together to provide a co
      ```
 
 ## Running
-
+------------------------
 This can be run both locally or using cloud llms like Gemini models, or even a hybrid models.
 
 For completely local execution - this application is designed to run on a standard Windows PC without requiring a GPU. 
@@ -79,11 +85,10 @@ On the terminal
    streamlit run app.py
    ```
 
-
 3. Access the web interface at `http://localhost:8501`
 
 ## How It Works
-
+------------------------
 The arXiv Research Assistant employs a CrewAI-based multi-agent framework:
 
 1. **Research Analyst Agent** (Local LLM via LM Studio):
@@ -102,8 +107,9 @@ The arXiv Research Assistant employs a CrewAI-based multi-agent framework:
    - Generates comprehensive summaries for each paper
    - Creates a well-structured table of contents in markdown
 
-## Technologies Used
 
+## Technologies Used
+------------------------
 - **CrewAI**: Framework for multi-agent orchestration
 - **Streamlit**: Web interface and visualization
 - **LM Studio**: Local LLM hosting
@@ -111,11 +117,13 @@ The arXiv Research Assistant employs a CrewAI-based multi-agent framework:
 - **arXiv API**: Research paper retrieval
 - **Python**: Core programming language
 
-## Customization
 
+## Customization
+------------------------
 - Modify `agentic_crews/arxiv_crew.py` to adjust agent configurations and LLM settings
 - Edit `agentic_crews/tools/html_tool.py` to customize HTML report styling
 - Update `agentic_crews/tools/text_tool.py` to change text report formatting
 
 ## Acknowledgments
+------------------------
 This mini-project is inspired by the article: [Building Your First AI Agent](https://levelup.gitconnected.com/building-your-first-ai-agent-that-will-actually-improve-you-as-an-ai-engineer-4cb99e590d30).
