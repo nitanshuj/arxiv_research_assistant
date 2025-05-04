@@ -28,6 +28,7 @@ The system consists of three specialized agents working together to provide a co
 
 ## How It Works
 ------------------------
+![Architecture Diagram](images/Step-by-Step-Workflow.png)
 1. **Paper Retrieval**: The system uses the `FetchArxivPapersTool` to fetch papers from ArXiv based on the selected date and categories.
 2. **Analysis and Ranking**: A `Senior AI Researcher` agent evaluates the papers using a custom LLM (Language Model) and ranks them based on their significance.
 3. **Report Generation**: A `Frontend Engineer` agent compiles the results into an interactive HTML report.
